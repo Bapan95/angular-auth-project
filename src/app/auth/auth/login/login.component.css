@@ -1,0 +1,167 @@
+/*#####################################login#########################################*/
+
+.my-newo-text p{
+    color: #fff;
+    font-size: 13px;
+}
+.fg{
+    text-align: right;
+}
+.fg a{
+    display: inline-block;
+    font-size: 13px;
+}
+.sg-btn button{
+    background: #353a60;
+    color: #fff;
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    padding: 11px 20px;
+}
+.did-ac p{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+/*#####################################login#########################################*/
+/*#####################################edit-profile#########################################*/
+
+.profile-pic {
+    width: 200px;
+    max-height: 200px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .file-upload {
+    display: none;
+  }
+  
+  .circle {
+      border-radius: 18% !important;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+  }
+  
+  /*
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  */
+  
+  .p-image {
+      position: absolute;
+      top: 123px;
+      right: 0;
+      left: 0;
+      transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+      text-align: center;
+  }
+  
+  .p-image:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  }
+  .p-image i{
+      background: #fff;
+      padding: 9px;
+      border-radius: 10px;
+      font-size: 25px;
+      color: #1a1a3e;
+  }
+  .upload-button {
+    font-size: 1.2em;
+  }
+  
+  .upload-button:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    color: #999;
+  }
+  
+  .upload-img-profile{
+      position: relative;
+      margin: 38px 0px;
+  }
+  .p-image p{
+      color: #00ffff;
+      font-size: 23px;
+  }
+  /*edit-form-section*/
+  .edit-form-section{
+      margin-top: 208px;
+      padding: 10px 0px;
+  }
+  .form-control {
+      background-color: transparent;
+      border: 2px solid #373960;
+      border-radius: 7px;
+      color: #fff;
+  }
+  .form-control:focus {
+      background-color: transparent;
+          color: #fff;
+  }
+  .edit-label{
+      background: #181b3e;
+      margin-top: 10p;
+      position: relative;
+      top: 13px;
+      margin: 0px 13px;
+      color: #fff;
+      padding: 0px 7px;
+      font-size: 14px;
+  }
+  .form-group {
+      margin-bottom: 6px;
+      position: relative;
+  }
+  .submit-div {
+      text-align: center;
+      margin-top: 45px;
+  }
+  .btn-primary{
+      background: #00ffff;
+      border: none;
+      padding: 6px 27px;
+      border-radius: 19px;
+      color: #181b3e;
+      font-weight: bold;
+  }
+  .btn-close{
+      border: 2px solid #b097f3;
+      border-radius: 50%;
+      margin-left: 10px;
+      color: #b097f3;
+      background: #353a60;
+  }
+  .edit-profile-img{
+      padding: 15px 0px 0px;
+  }
+  /*edit-form-section*/
+  /*#####################################edit-profile#########################################*/
+  .form-group li {
+  list-style: none;
+
+}
+
+.hide-password {
+  display: none
+}
+.password-showhide{
+    position: absolute;
+    right: 11px;
+    top: 31px;
+    color: #fff;
+}
+#forgot_pass{
+    color: #0d43ef;
+}

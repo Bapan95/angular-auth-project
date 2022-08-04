@@ -1,0 +1,48 @@
+
+          
+    <ngx-alerts></ngx-alerts>   
+    <section class="sign-section">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sign-box">
+                        <div class="sign-text" id="sign_id">
+                            <h1>Sign In<span><a routerLink="/"><i class="fa fa-home" style="float: right; color: white;"></i></a></span></h1>
+                            <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" >
+                                <input type="email" name="email" formControlName="email" class="e-ph" placeholder="Email">
+                                <!--<input type="text" name="mobile" formControlName="mobile" class="e-ph" placeholder="mobile">-->
+                                <input type="password" autocomplete="current-password" id="id_password" name="Password" formControlName="password" class="e-ph" placeholder="Password"> 
+                                <i class="fa fa-eye fa-eye-slash" aria-hidden="true" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                                <button class="sign-in-btn">Sign In</button> 
+                            </form>
+                            <div class="row mt-top">
+                                <div class="col-md-6 col-6">
+                                    <label class="container-check" id="forgot_pass">Forgot Password 
+                                    </label>
+                                </div>
+                                <!-- <div class="col-md-6 col-6">
+                                    <a href="#" class="nd-help">Need help?</a>
+                                </div> -->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="lg-facebook">
+                                        <!-- <img src="assets/images/facebook-icon-img.png" class="img-fluid">
+                                        <span class="login-span">Login with Facebook</span> -->
+                                        <p class="new-p-o">New to Newo? <a routerLink="/signup"> Sign up now.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-text" id="reset_id" style="display: none;">
+                            <h1>Reset Password<span><a routerLink="/"><i class="fa fa-home" style="float: right; color: white;"></i></a></span></h1>
+                            <form [formGroup]="passForm" (ngSubmit)="passreset(passForm)" >
+                                <input type="email" name="email" formControlName="email" class="e-ph" placeholder="Email">
+                                <button class="sign-in-btn">Submit</button> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>

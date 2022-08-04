@@ -1,0 +1,195 @@
+<section class="vh-100">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5" style="background-color: rgb(245, 242, 57);">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+
+                                <form [formGroup]="signupForm" (ngSubmit)="signUp()" class="mx-1 mx-md-4">
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input formControlName="fname" type="text" id="form3Example1m"
+                                                    class="form-control form-control-lg" style="background-color:white;"
+                                                    required="" />
+                                                <label class="form-label" for="form3Example1m">First name</label>
+                                                <span class="text-danger"
+                                                *ngIf="signupForm.controls['fname'].dirty && signupForm.hasError('required','fname')">*fname
+                                                is required</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input formControlName="lname" type="text" id="form3Example1n"
+                                                    class="form-control form-control-lg" style="background-color:white;"
+                                                    required="" />
+                                                <label class="form-label" for="form3Example1n">Last name</label>
+                                                <span class="text-danger"
+                                                *ngIf="signupForm.controls['lname'].dirty && signupForm.hasError('required','lname')">*lname
+                                                is required</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input formControlName="address" type="text" id="form3Example8"
+                                            class="form-control form-control-lg" style="background-color:white;"
+                                            required="" />
+                                        <label class="form-label" for="form3Example8">Address</label>
+                                        <span class="text-danger"
+                                        *ngIf="signupForm.controls['address'].dirty && signupForm.hasError('required','address')">*address
+                                        is required</span>
+                                    </div>
+                                    <div class="form-outline">
+                                        <input formControlName="phone" type="tel" id="phoneNumber"
+                                            class="form-control form-control-lg" style="background-color:white;"
+                                            required="" />
+                                        <label class="form-label" for="phoneNumber">Phone Number</label>
+                                        <span class="text-danger"
+                                        *ngIf="signupForm.controls['phone'].dirty && signupForm.hasError('required','phone')">*phone
+                                        is required</span>
+                                    </div>
+                                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                                        <h6 class="mb-0 me-4">Gender: </h6>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input formControlName="female" class="form-check-input" type="radio"
+                                                name="inlineRadioOptions" id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">Female</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input formControlName="male" class="form-check-input" type="radio"
+                                                name="inlineRadioOptions" id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Male</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+
+                                            <select class="select" formControlName="state">
+                                                <option value="1">State</option>
+                                                <option value="2">West Bengal</option>
+                                                <option value="3">Maharastra</option>
+                                                <option value="4">Bihar</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+
+                                            <select class="select" formControlName="city">
+                                                <option value="1">City</option>
+                                                <option value="2">Kolkata</option>
+                                                <option value="3">Howrah</option>
+                                                <option value="4">Hooghly</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <div class="form-label" for="form3Example9">
+                                            <h4 class="mb-0 me-4"><em>DOB</em></h4>
+                                        </div>
+                                        <input formControlName="birth" type="date" id="form3Example9"
+                                            class="form-control form-control-lg" style="background-color:white;"
+                                            required="" />
+                                            <span class="text-danger"
+                                            *ngIf="signupForm.controls['birth'].dirty && signupForm.hasError('required','birth')">*birth
+                                            is required</span>
+
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input formControlName="pincode" type="text" id="form3Example90"
+                                            class="form-control form-control-lg" style="background-color:white;" />
+                                        <label class="form-label" for="form3Example90">Pincode</label>
+                                        <span class="text-danger"
+                                        *ngIf="signupForm.controls['pincode'].dirty && signupForm.hasError('required','pincode')">*pincode
+                                        is required</span>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input formControlName="course" type="text" id="form3Example99"
+                                            class="form-control form-control-lg" style="background-color:white;" />
+                                        <label class="form-label" for="form3Example99">Course</label>
+                                        <span class="text-danger"
+                                        *ngIf="signupForm.controls['course'].dirty && signupForm.hasError('required','course')">*course
+                                        is required</span>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input formControlName="mail" type="email" id="form3Example3c"
+                                                class="form-control" style="background-color:white;" required="" />
+                                            <label class="form-label" for="form3Example3c">Your Email</label>
+                                            <span class="text-danger"
+                                            *ngIf="signupForm.controls['mail'].dirty && signupForm.hasError('required','mail')">*mail
+                                            is required</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input formControlName="password" type="password" id="form3Example4c"
+                                                class="form-control" style="background-color:white;" required="" />
+                                            <label class="form-label" for="form3Example4c">Password</label>
+                                            <span class="text-danger"
+                                            *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required','password')">*password
+                                            is required</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input formControlName="cpassword" type="password" id="form3Example4cd" class="form-control"
+                                                style="background-color:white;" />
+                                            <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                        <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary btn-lg">Register</button>
+                                    </div>
+
+                                </form>
+                                <a style="color: rgb(19, 245, 245);margin: top 10px;" routerLink="/login">already
+                                    register?click to login!!</a>
+                            </div>
+                            <mdb-carousel #carousel [controls]="true">
+                                <mdb-carousel-item>
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100"
+                                        alt="..." />
+                                </mdb-carousel-item>
+                                <mdb-carousel-item>
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100"
+                                        alt="..." />
+                                </mdb-carousel-item>
+                                <mdb-carousel-item>
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100"
+                                        alt="..." />
+                                </mdb-carousel-item>
+                            </mdb-carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const myCarousel = document.querySelector('#myCarousel');
+    const carousel = new mdb.Carousel(myCarousel);
+    carousel.pause();
+</script>

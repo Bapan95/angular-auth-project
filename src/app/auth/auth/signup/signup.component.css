@@ -1,0 +1,326 @@
+/***********************sign-section***********************/
+.sign-section{
+    background-image: url(/assets/images/back-sign.jpg);
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+#togglePassword{
+  cursor: pointer;
+  position: absolute;
+  top: 269px;
+  right: 23px;
+  color: #fff;
+}
+.sign-box{
+    position: relative;
+    padding: 10px 10px;
+    background: rgba(0,0,0,0.8);
+    margin-top: 27%;  
+}
+.sign-text h1 {
+    font-size: 28px;
+    color: #fff;
+}
+.e-ph{
+    width: 100%;
+    padding: 8px 10px;
+    background: #333;
+    border: none;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.e-phone{
+    width: 77%;
+    padding: 8px 10px;
+    background: #333;
+    border: none;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.e-code{
+        width: 18%;
+        padding: 8px 10px;
+        background: #333;
+        border: none;
+        margin-bottom: 12px;
+        margin-right: 12px;
+        color: #fff;
+}
+.sign-in-btn{
+        background: #ffc107;
+    border: none;
+    width: 100%;
+    padding: 7px 0px;
+    color: #000;
+    font-weight: 500;  
+}
+.container-check {
+    color: #fff;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mt-top{
+    margin-top: 10px;
+}
+.nd-help {
+    font-size: 13px;
+    color: #fff;
+    text-align: right;
+    display: block;
+}
+.login-span{
+    color: #737373;
+    font-size: 14px;
+    padding: 0px 5px; 
+}
+.lg-facebook img{
+    width: 7%;
+}
+.new-p-o{
+    color: #737373;
+    font-size: 16px;
+    padding: 3px 0px 0px;
+}
+.new-p-o a{
+    color: #fff;
+}
+.go-bt-sign{
+    color: #fff;
+    padding: 15px 0px 0px;
+}
+/***********************sign-section***********************/
+/***********************shoping-banner***********************/
+.rd-radious img{
+    border-radius: 10px;  
+}
+/***********************shoping-banner***********************/
+a:hover{
+    text-decoration: none;
+}
+@media(max-width: 991px){
+    body {
+        width: 100%;
+    }
+    /* .e-phone{
+        width: 100%;
+    } */
+}
+@media(max-width: 767px){
+    /* .e-phone{
+        width: 100%;
+    } */
+    /***********************sign-section***********************/
+.sign-section{
+    background-image: url(/assets/images/back-sign.jpg);
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sign-box{
+    padding: 10px 10px;
+    background: rgba(0,0,0,0.8);
+    margin-top: 27%;  
+}
+.sign-text h1 {
+    font-size: 28px;
+    color: #fff;
+}
+.e-ph{
+    width: 100%;
+    padding: 8px 10px;
+    background: #333;
+    border: none;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.e-code{
+    width: 18%;
+    padding: 8px 10px;
+    background: #333;
+    border: none;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    color: #fff;
+    text-align: center;
+}
+.sign-in-btn{
+        background: #ffc107;
+    border: none;
+    width: 100%;
+    padding: 7px 0px;
+    color: #000;
+    font-weight: 500;  
+}
+.container-check {
+    color: #fff;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mt-top{
+    margin-top: 10px;
+}
+.nd-help {
+    font-size: 13px;
+    color: #fff;
+    text-align: right;
+    display: block;
+}
+.login-span{
+    color: #737373;
+    font-size: 14px;
+    padding: 0px 5px; 
+}
+.lg-facebook img{
+    width: 7%;
+}
+.new-p-o{
+    color: #737373;
+    font-size: 16px;
+    padding: 3px 0px 0px;
+}
+.new-p-o a{
+    color: #fff;
+}
+.go-bt-sign{
+    color: #fff;
+    padding: 15px 0px 0px;
+}
+/***********************sign-section***********************/
+/***********************shoping-banner***********************/
+.rd-radious img{
+    border-radius: 10px;  
+}
+/***********************shoping-banner***********************/
+a:hover{
+    text-decoration: none;
+}
+}

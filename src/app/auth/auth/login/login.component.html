@@ -1,0 +1,104 @@
+<ngx-alerts></ngx-alerts>
+<div class="margin-div">
+    <div class="profile-name">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="profile-header-details">
+                        <a href="#">
+                            <img src="assets/images/back-btn.png" style="width: 40%;" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="profile-header-details">
+                        <div class="face-round-profile">
+                            <img src="assets/images/logo.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-newo" id="sign_id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="my-newo-text">
+                        <h2><span> Login</span></h2>
+                        <p>Please sign in to continue</p>
+                    </div>
+                </div>
+            </div>
+            <section class="password-change-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="edit-form">
+                                <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)">
+                                    <div class="form-group">
+                                        <label class="edit-label" for="">Email</label>
+                                        <input type="email" formControlName="email" class="form-control" id="email-text" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group frm-input">
+                                    </div>
+                                    <div class="form-group frm-input">
+                                        <label class="edit-label" for="">Password</label>
+                                        <li>
+                                            <input type="password" name="password" formControlName="password" class="form-control" id="password" />
+                                            <span class="password-showhide">
+                            <span class="show-password"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                            <span class="hide-password"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+                                            </span>
+                                        </li>
+                                    </div>
+                                    <div class="fg">
+                                        <label id="forgot_pass">Forgot Password</label>
+                                    </div>
+                                    <div class="sg-btn">
+                                        <button type="submit" class="btn btn-warning">Sign In</button>
+                                    </div>
+                                    <div class="did-ac">
+                                        <p>Didn't have an account?<a routerLink="/signup"> Create Account</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="my-newo" id="reset_id" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="my-newo-text">
+                        <h2><span> Reset Password</span></h2>
+                    </div>
+                </div>
+            </div>
+            <section class="password-change-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="edit-form">
+                                <form [formGroup]="passForm" (ngSubmit)="passreset(passForm)">
+                                    <div class="form-group">
+                                        <label class="edit-label" for="">Email</label>
+                                        <input type="email" formControlName="email" class="form-control" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group frm-input">
+                                    </div>
+                                    <div class="sg-btn">
+                                        <button type="submit" class="btn btn-warning">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
