@@ -23,14 +23,6 @@
       "email": "ashoke.flamingostech@gmail.com",
       "mobile": "9731020990",
       "salary": "15000"
-    },
-    {
-      "id": 4,
-      "first": "Jayanta",
-      "last": "Ghosh",
-      "email": "jayanta.flamingostech@gmail.com",
-      "mobile": "91540124007",
-      "salary": "25000"
     }
   ],
   "signup": [
@@ -80,6 +72,7 @@
       "password": "ashoke1996",
       "id": 3
     }
+    
   ],
   "profile": [
     {
